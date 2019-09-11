@@ -90,7 +90,14 @@ class ProductProvider extends Component {
     }
 
     clearCart = () => {
-        console.log("this is clearCart");
+        this.setState(
+            () => {
+                return { cart: [] };
+            }, () => {
+                this.setProducts();
+                this.addTotals();
+            })
+
     }
 
     addTotals = () => {
@@ -101,10 +108,12 @@ class ProductProvider extends Component {
         const tax = parseFloat(tempTax.toFixed(2));
         const total = subTotal + tax;
 
-        this.setState({
-            cartSubTotal: subTotal,
-            cartTax: tax,
-            cartTotal: total,
+        this.setState(() => {
+            return {
+                cartSubTotal: subTotal,
+                cartTax: tax,
+                cartTotal: total,
+            }
         })
     }
 
