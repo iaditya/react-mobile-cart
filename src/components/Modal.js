@@ -15,7 +15,7 @@ export default class Modal extends Component {
                         return null;
                     } else {
                         return (<ModalWrapper>
-                            <div className="container">
+                            <div className="container text-center">
                                 <div className="row">
                                     <div id="modal" className="col-8 mx-auto col-md-6 col-lg-4 text-capitalize p-5">
                                         <h3>Item Added to the cart</h3>
