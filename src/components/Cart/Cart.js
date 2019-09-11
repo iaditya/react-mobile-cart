@@ -3,8 +3,8 @@ import Title from '../Title';
 import CartColumns from './CartColumns';
 import Empty from './EmptyCart';
 import { ProductConsumer } from '../../context';
-import CartItem from './CartItem';
 import CartList from './CartList';
+import CartTotals from './CartTotals';
 
 export default class Cart extends Component {
     render() {
@@ -19,6 +19,7 @@ export default class Cart extends Component {
                                     <Title name="Aditya" title="Cart"></Title>
                                     <CartColumns />
                                     <CartList value={value}></CartList>
+                                    <CartTotals value={value}></CartTotals>
                                 </React.Fragment>
                             )
                         } else {
