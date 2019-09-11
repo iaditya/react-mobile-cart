@@ -23,7 +23,7 @@ export default class Product extends Component {
                                     <img src={img} className="card-img-top" />
                                 </Link>
                                 <button className="cart-btn" disabled={inCart ? true : false}
-                                    onClick={() => { console.log("added to cart") }}
+                                    onClick={() => { value.addToCart(id); }}
                                 >
                                     {inCart
                                         ? (<p className="text-capitalize mb-0" disabled>In cart</p>)
