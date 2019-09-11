@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../logo.svg';
-import { ButtonConainer } from './Button';
+import { ButtonContainer } from './Button';
 
 export default class Navbar extends Component {
 
@@ -20,11 +20,11 @@ export default class Navbar extends Component {
                 </ul>
 
                 <Link to="/cart" className="ml-auto">
-                    <ButtonConainer >
+                    <ButtonContainer >
                         <span className="mr-2">
                             <i className="fas fa-cart-plus"> my cart</i>
                         </span>
-                    </ButtonConainer>
+                    </ButtonContainer>
                 </Link>
             </NavWrapper>
 
